@@ -1,7 +1,19 @@
 /*-- scss:rules --*/
 
+.after-arrow ::after {
+    content: "&rarr;" !important;
+    display: inline-block !important;
+    position: absolute !important;
+            background: #000;
+            width: 30px;
+            height: 30px;
+            top: 25px;
+            left: -15px;
+            transform: rotate(45deg);
+}
+
 aside {
-    font-size: 0.6em !important;
+    font-size: 0.5em !important;
 }
 
 .bold {
@@ -11,6 +23,10 @@ aside {
 .callout-star .callout-content {
     font-size: 1.8em !important;
     border: 1px solid black !important;
+}
+
+.callout-tip {
+    margin-bottom: 1px !important;
 }
 
 .caption-sized {
@@ -63,6 +79,15 @@ aside {
     font-size: 1.08rem !important;
 }
 
+.dataTables_paginate {
+    font-size: 0.8em !important;
+}
+
+.fw-table {
+    /* For tables with fixed-width font */
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .gsym-large {
     font-size: 1.5em !important;
 }
@@ -92,7 +117,6 @@ aside {
         'opsz' 48
 }
 
-
 .nobotmargin * {
     margin-bottom: 0px !important;
 }
@@ -101,32 +125,48 @@ aside {
     margin-top: 0px !important;
 }
 
+.small-aside {
+    font-size: 1rem !important;
+}
+
 .small-captions figcaption {
     font-size: 0.45em !important;
 }
 
-.smallertext {
-    font-size: 85% !important;
-}
-
-.smallfooter {
+.small-footer {
     font-size: 0.4em !important;
 }
 
-.smallishmath .math.display {
+.smallish-math .math.display {
     font-size: 90% !important;
 }
 
-.smallmath .math.display {
+.small-math .math.display {
     font-size: 85% !important;
 }
 
-.smallinline .math.inline {
+.smaller-text {
     font-size: 85% !important;
 }
 
-.smallermath .math.display {
+.small-inline .math.inline {
+    font-size: 85% !important;
+}
+
+.smaller-math .math.display {
     font-size: 80% !important;
+}
+
+.small-codeblock {
+    font-size: 1.2rem !important;
+}
+
+.smallish-codeblock {
+    font-size: 1.75rem !important;
+}
+
+.small-table td, th {
+    font-size: 1.5rem !important;
 }
 
 .smalltitle h2 {
