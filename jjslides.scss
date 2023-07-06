@@ -1,0 +1,175 @@
+/*-- scss:rules --*/
+
+aside {
+    font-size: 0.6em !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.callout-star .callout-content {
+    font-size: 1.8em !important;
+    border: 1px solid black !important;
+}
+
+.caption-sized {
+    font-size: 0.5em !important;
+}
+
+.cb1 {
+    color: #E69F00 !important;
+}
+
+.cb2 {
+    color: #56B4E9 !important;
+}
+
+.cb3 {
+    color: #009E73 !important;
+}
+
+.cb4 {
+    color: #F0E442 !important;
+}
+
+.coef-label {
+    width: 100% !important;
+    height: 100% !important;
+    margin: auto !important;
+    color: blue !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+.coef-table {
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 1.5rem !important;
+}
+
+.crunch-figures .quarto-figure {
+    margin-bottom: 0 !important;
+}
+
+.crunch-figures figcaption {
+    margin-top: 0 !important;
+}
+
+.crunch-math .MathJax_Display {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.crunch-output pre {
+    font-size: 1.08rem !important;
+}
+
+.gsym-large {
+    font-size: 1.5em !important;
+}
+
+.gsym-medium {
+    font-size: 1.2em !important;
+}
+
+.highlight-below {
+    background-color: transparent !important;
+}
+
+.highlight-block {
+    border: 1px solid black !important;
+    width: fit-content !important;
+    padding: 10px !important;
+    filter: drop-shadow(0rem 0rem 0.8rem black) !important;
+    border-radius: 3px !important;
+    // margin-bottom: 10px !important;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+
+.nobotmargin * {
+    margin-bottom: 0px !important;
+}
+
+.notopmargin {
+    margin-top: 0px !important;
+}
+
+.small-captions figcaption {
+    font-size: 0.45em !important;
+}
+
+.smallertext {
+    font-size: 85% !important;
+}
+
+.smallfooter {
+    font-size: 0.4em !important;
+}
+
+.smallishmath .math.display {
+    font-size: 90% !important;
+}
+
+.smallmath .math.display {
+    font-size: 85% !important;
+}
+
+.smallinline .math.inline {
+    font-size: 85% !important;
+}
+
+.smallermath .math.display {
+    font-size: 80% !important;
+}
+
+.smalltitle h2 {
+    // font-size: var(--r-heading2-size) !important;
+    font-size: var(--r-heading3-size) !important;
+}
+
+summary {
+    font-size: 80% !important;
+    cursor: pointer !important;
+    background-color: #ffffff !important;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border-bottom: 1px solid transparent !important;
+}
+
+summary:hover {
+    background-color: #fafafa !important;
+    // border-bottom: 1px solid black !important;
+}
+
+.unnumbered h2 {
+    margin-bottom: 0px !important;
+}
+
+.zigzag {
+    position: relative;
+    padding: 8px 8px 32px 8px;
+    background: #dddccf;
+}
+
+.zigzag:after {
+    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
