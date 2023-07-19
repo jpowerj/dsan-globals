@@ -3,7 +3,7 @@ library(ggplot2)
 cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 options(ggplot2.discrete.colour = cbPalette)
 # Theme generator, for given sizes
-.gg_theme <- function(plot_type = "full") {
+dsan_theme <- function(plot_type = "full") {
     if (plot_type == "full") {
         custom_base_size <- 16
     } else if (plot_type == "half") {
