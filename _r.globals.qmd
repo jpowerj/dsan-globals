@@ -1,8 +1,0 @@
-::: {.hidden}
-
-```{r}
-#| label: source-globals
-source("../assets/code/globals.r")
-```
-
-:::

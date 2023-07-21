@@ -1,3 +1,7 @@
+::: {.hidden}
+
+```{r}
+#| label: source-gg-globals
 # For slides
 library(ggplot2)
 cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
@@ -37,3 +41,6 @@ remove_legend_title <- function() {
         legend.spacing.y = unit(0, "mm")
     ))
 }
+```
+
+:::
