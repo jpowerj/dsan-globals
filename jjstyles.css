@@ -140,11 +140,11 @@ table thead th {
   background-clip: padding-box;
 }
 
-.title-09 h2 {
+.title-09 h2, .title-09 h1 {
   font-size: calc(0.9 * var(--r-heading2-size)) !important;
 }
 
-.title-10 h2 {
+.title-10 h2, .title-10 h1 {
   font-size: calc(1.0 * var(--r-heading2-size)) !important;
 }
 
