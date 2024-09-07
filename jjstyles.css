@@ -103,6 +103,10 @@ a.disabled {
   margin-bottom: 2px !important;
 }
 
+details {
+  margin-bottom: 0px !important;
+}
+
 figcaption {
   text-align: center !important;
 }
@@ -155,6 +159,9 @@ table thead th {
   background-clip: padding-box;
 }
 
+summary {
+  font-size: 70% !important;
+}
 
 /* td centering */
 .tdc {
