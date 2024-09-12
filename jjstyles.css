@@ -145,6 +145,11 @@ figcaption {
   border-top: 2px solid gray !important;
 }
 
+.not-title-slide {
+  display: block !important;
+  top: 0px !important;
+}
+
 .sidebar-footer-item {
   font-size: 80% !important;
 }
@@ -183,8 +188,14 @@ figcaption {
   line-height: 0.7em !important;
 }
 
-/* and one small fix for weird FF behavior, described in https://stackoverflow.com/questions/7517127/ */
+.small-title h1 {
+  font-size: var(--r-heading2-size) !important;
+}
+.small-title h2 {
+    font-size: var(--r-heading3-size) !important;
+}
 
+/* and one small fix for weird FF behavior, described in https://stackoverflow.com/questions/7517127/ */
 table thead th {
   background-clip: padding-box;
 }
