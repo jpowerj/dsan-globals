@@ -37,3 +37,11 @@ remove_legend_title <- function() {
         legend.spacing.y = unit(0, "mm")
     ))
 }
+
+remove_legend <- function() {
+  return(
+    theme(
+      legend.position = "none"
+    )
+  )
+}
