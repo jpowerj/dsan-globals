@@ -229,12 +229,19 @@ summary {
   font-size: 1.2rem !important;
 }
 
+.table-80 td {
+  font-size: 80% !important;
+}
+
 /* and one small fix for weird FF behavior, described in https://stackoverflow.com/questions/7517127/ */
 table thead th {
   background-clip: padding-box;
 }
 
 .table-va td {
+  vertical-align: middle !important;
+}
+.table-valign td {
   vertical-align: middle !important;
 }
 
@@ -262,10 +269,12 @@ table thead th {
   vertical-align: top !important;
 }
 
+.text-85 {
+  font-size: 85% !important;
+}
 .text-90 {
   font-size: 90% !important;
 }
-
 .text-95 {
   font-size: 95% !important;
 }
@@ -297,4 +306,8 @@ table thead th {
 /* For lists, shifting the bullet points */
 .unindent-lists ul {
   margin-left: 0px !important;
+}
+
+.valign-cols div.column {
+  vertical-align: middle;
 }
