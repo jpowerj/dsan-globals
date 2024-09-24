@@ -10,6 +10,11 @@ a.disabled {
   border: 1px solid black !important;
 }
 
+.boxed {
+  border: 3px solid black !important;
+  padding: 2px !important;
+}
+
 /* div.callout-note > .callout-header {
   background-color: #f8f8f8 !important;
 }
@@ -81,9 +86,13 @@ a.disabled {
   margin-bottom: 0px !important;
 }
 
-.crunch-hr {
+.crunch-hr hr {
   margin-top: 8px !important;
   margin-bottom: 6px !important;
+}
+.crunch-hr-3 hr {
+  margin-top: 4px !important;
+  margin-bottom: 3px !important;
 }
 
 .crunch-img img {
