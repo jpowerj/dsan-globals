@@ -1,28 +1,34 @@
 # For slides
 library(ggplot2)
-cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+cbPalette <- c(
+  "#E69F00", "#56B4E9", "#009E73", "#F0E442",
+  "#0072B2", "#D55E00", "#CC79A7"
+)
+cb_palette <- cbPalette
 options(ggplot2.discrete.colour = cbPalette)
 # Theme generator, for given sizes
 dsan_theme <- function(plot_type = "full") {
-    if (plot_type == "full") {
-        custom_base_size <- 16
-    } else if (plot_type == "half") {
-        custom_base_size <- 22
-    } else if (plot_type == "quarter") {
-        custom_base_size <- 28
-    } else {
-        # plot_type == "col"
-        custom_base_size <- 22
-    }
-    theme <- theme_classic(base_size = custom_base_size) +
-        theme(
-            plot.title = element_text(hjust = 0.5),
-            plot.subtitle = element_text(hjust = 0.5),
-            legend.title = element_text(hjust = 0.5),
-            legend.box.background = element_rect(colour = "black")
-        )
-    return(theme)
+  if (plot_type == "full") {
+      custom_base_size <- 16
+  } else if (plot_type == "half") {
+      custom_base_size <- 22
+  } else if (plot_type == "quarter") {
+      custom_base_size <- 28
+  } else {
+      # plot_type == "col"
+      custom_base_size <- 22
+  }
+  theme <- theme_classic(base_size = custom_base_size) +
+      theme(
+          plot.title = element_text(hjust = 0.5),
+          plot.subtitle = element_text(hjust = 0.5),
+          legend.title = element_text(hjust = 0.5),
+          legend.box.background = element_rect(colour = "black")
+      )
+  return(theme)
 }
+
+theme_dsan <- dsan_theme
 
 knitr::opts_chunk$set(fig.align = "center")
 g_pointsize <- 5
@@ -45,3 +51,6 @@ remove_legend <- function() {
     )
   )
 }
+
+# https://www.pmassicotte.com/posts/2022-08-15-removing-whitespace-around-figures-quarto/
+knitr::knit_hooks$set(crop = knitr::hook_pdfcrop)
