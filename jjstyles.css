@@ -112,6 +112,10 @@ a.disabled {
   margin-bottom: 3px !important;
 }
 
+.crunch-iframe iframe {
+  margin-bottom: 0px !important;
+}
+
 .crunch-img img {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -204,6 +208,11 @@ figcaption {
 }
 .math-80 .math.display {
   font-size: 80% !important;
+}
+
+.footnotes-0 aside {
+  bottom: 0px !important;
+  margin-top: 0px !important;
 }
 
 .new-unit {
@@ -324,10 +333,12 @@ table thead th {
   font-size: 95% !important;
 }
 
+.title-08 h2, .title-08 h1 {
+  font-size: calc(0.8 * var(--r-heading2-size)) !important;
+}
 .title-09 h2, .title-09 h1 {
   font-size: calc(0.9 * var(--r-heading2-size)) !important;
 }
-
 .title-10 h2, .title-10 h1 {
   font-size: calc(1.0 * var(--r-heading2-size)) !important;
 }
