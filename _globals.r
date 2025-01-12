@@ -52,5 +52,10 @@ remove_legend <- function() {
   )
 }
 
+# Global functions
+get_rss <- function(model) {
+  return(sum(summary(model)$residuals^2))
+}
+
 # https://www.pmassicotte.com/posts/2022-08-15-removing-whitespace-around-figures-quarto/
 knitr::knit_hooks$set(crop = knitr::hook_pdfcrop)
