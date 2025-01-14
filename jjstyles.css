@@ -231,6 +231,10 @@ figcaption {
 .sidebar-menu-container {
   padding-top: 10px !important;
 }
+.sidebar-subtitle {
+  font-size: 12pt !important;
+  line-height: 0.7em !important;
+}
 
 .smaller-table td {
   font-size: 80% !important;
@@ -258,11 +262,6 @@ figcaption {
 
 .sticky-table tbody:nth-of-type(1) tr:nth-of-type(1) td {
   border-top: none !important;
-}
-
-.sidebar-subtitle {
-  font-size: 12pt !important;
-  line-height: 0.7em !important;
 }
 
 .small-tex-td {
