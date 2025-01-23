@@ -6,6 +6,10 @@ a.disabled {
   pointer-events: none;
 }
 
+.alg {
+  font-variant-caps: small-caps !important;
+}
+
 .aside-80 aside {
   font-size: 1.3rem !important;
 }
