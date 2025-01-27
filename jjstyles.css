@@ -79,6 +79,9 @@ a.disabled {
 .code-90 code {
   font-size: 90% !important;
 }
+.code-80 code {
+  font-size: 80% !important;
+}
 
 .crunch-blockquote blockquote {
   margin-top: 0px !important;
@@ -222,6 +225,13 @@ figcaption {
 .not-title-slide {
   display: block !important;
   top: 0px !important;
+}
+
+.output-80 .cell-output {
+  font-size: 80% !important;
+}
+.output-75 .cell-output {
+  font-size: 75% !important;
 }
 
 .sidebar-footer-item {
