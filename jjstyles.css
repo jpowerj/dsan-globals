@@ -234,6 +234,10 @@ figcaption {
   font-size: 1em !important;
 }
 
+.fn-span {
+  font-size: 80% !important;
+}
+
 .inline-90 .math.inline {
   font-size: 90% !important;
 }
