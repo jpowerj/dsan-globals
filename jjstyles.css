@@ -91,6 +91,10 @@ a.disabled {
   font-size: 80% !important;
 }
 
+.cols-clip .column {
+  overflow-x: clip !important;
+}
+
 /* Vertical-align columns */
 .cols-va .column {
   vertical-align: middle !important;
@@ -236,6 +240,10 @@ figcaption {
 
 .fix-tex-headers th {
   font-size: 1em !important;
+}
+
+.fn-span {
+  font-size: 80% !important;
 }
 
 .inline-90 .math.inline {
@@ -441,6 +449,9 @@ table thead th {
   font-size: 95% !important;
 }
 
+.title-07 h2, .title-07 h1 {
+  font-size: calc(0.7 * var(--r-heading2-size)) !important;
+}
 .title-08 h2, .title-08 h1 {
   font-size: calc(0.8 * var(--r-heading2-size)) !important;
 }
