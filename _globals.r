@@ -6,6 +6,7 @@ cbPalette <- c(
 )
 cb_palette <- cbPalette
 options(ggplot2.discrete.colour = cbPalette)
+options(ggplot2.discrete.fill = cbPalette)
 get_base_size <- function(plot_type) {
   if (plot_type == "full") {
     custom_base_size <- 16
