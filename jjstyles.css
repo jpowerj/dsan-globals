@@ -1,4 +1,8 @@
 /* Longer top comment! */
+body {
+  font-family: "Computer Modern Sans", sans-serif;
+}
+
 a.disabled {
   /* Make the disabled links grayish */
   color: gray;
@@ -91,6 +95,10 @@ a.disabled {
   font-size: 80% !important;
 }
 
+.cols-clip .column {
+  overflow-x: clip !important;
+}
+
 /* Vertical-align columns */
 .cols-va .column {
   vertical-align: middle !important;
@@ -159,6 +167,10 @@ a.disabled {
 .crunch-math mjx-container {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
+}
+.crunch-math-15 mjx-container {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
 }
 
 .crunch-p p {
@@ -247,8 +259,14 @@ figcaption {
 .math-90 .math.display {
   font-size: 90% !important;
 }
+.math-85 .math.display {
+  font-size: 85% !important;
+}
 .math-80 .math.display {
   font-size: 80% !important;
+}
+.math-75 .math.display {
+  font-size: 75% !important;
 }
 
 .footnotes-0 aside {
@@ -269,6 +287,18 @@ figcaption {
   top: 0px !important;
 }
 
+.output-center .cell-output pre {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.output-nowrap .cell-output pre code {
+  word-break: normal !important;
+  white-space: pre-wrap !important;
+}
+.output-90 .cell-output {
+  font-size: 80% !important;
+}
 .output-80 .cell-output {
   font-size: 80% !important;
 }
