@@ -259,8 +259,14 @@ figcaption {
 .math-90 .math.display {
   font-size: 90% !important;
 }
+.math-85 .math.display {
+  font-size: 85% !important;
+}
 .math-80 .math.display {
   font-size: 80% !important;
+}
+.math-75 .math.display {
+  font-size: 75% !important;
 }
 
 .footnotes-0 aside {
