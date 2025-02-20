@@ -190,20 +190,24 @@ margin-bottom: 15px !important;
 }
 
 .crunch-p p {
-margin-top: 2px !important;
-margin-bottom: 2px !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
 }
 .crunch-p-5 p {
-margin-top: 5px !important;
-margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
 }
 .crunch-p-6 p {
-margin-top: 6px !important;
-margin-bottom: 6px !important;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
 }
 .crunch-p-8 p {
-margin-top: 8px !important;
-margin-bottom: 8px !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+/* Bottom padding */
+.crunch-p-bpad p {
+    padding-bottom: 0px !important;
 }
 
 .crunch-quarto-figure .quarto-figure {
