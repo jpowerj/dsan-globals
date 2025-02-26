@@ -292,6 +292,9 @@ font-size: 80% !important;
 .inline-80 .math.inline {
     font-size: 80% !important;
 }
+.math-95 .math.display {
+    font-size: 95% !important;
+}
 .math-90 .math.display {
 font-size: 90% !important;
 }
@@ -434,10 +437,10 @@ background-clip: padding-box;
 }
 
 .table-va td {
-vertical-align: middle !important;
+    vertical-align: middle !important;
 }
 .table-valign td {
-vertical-align: middle !important;
+    vertical-align: middle !important;
 }
 
 /* td centering */
