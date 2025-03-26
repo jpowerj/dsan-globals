@@ -104,7 +104,7 @@ overflow-x: clip !important;
 
 /* Vertical-align columns */
 .cols-va .column {
-vertical-align: middle !important;
+    vertical-align: middle !important;
 }
 
 .crunch-blockquote blockquote {
@@ -151,8 +151,8 @@ margin-bottom: 0px !important;
 }
 
 .crunch-img img {
-margin-top: 0px !important;
-margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .crunch-li li {
@@ -179,14 +179,17 @@ margin-bottom: 0px !important;
     margin-top: 10px !important;
     margin-bottom: 10px !important;
 }
+.crunch-li-first li:first-of-type {
+    margin-top: 2px !important;
+}
 
 .crunch-math mjx-container {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
 }
 .crunch-math-15 mjx-container {
-margin-top: 15px !important;
-margin-bottom: 15px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
 }
 
 .crunch-p p {
@@ -211,37 +214,41 @@ margin-bottom: 15px !important;
 }
 
 .crunch-quarto-figure .quarto-figure {
-margin-top: 0px !important;
-margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 .crop-quarto-figure .quarto-figure {
-margin-bottom: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .crunch-quarto-layout-cell .quarto-layout-cell {
-margin-left: 0px !important;
-margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 .crunch-quarto-layout-panel .quarto-layout-panel {
-margin-top: 0px !important;
-margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.crunch-td td {
+    padding: 3px !important;
 }
 
 .crunch-title h2 {
-margin-bottom: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .crunch-ul ul {
-margin-bottom: 2px !important;
+    margin-bottom: 2px !important;
 }
 
 .de9im {
-width: 75% !important;
+    width: 75% !important;
 }
 
 details {
-margin-bottom: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 figcaption {
@@ -292,11 +299,17 @@ font-size: 80% !important;
 .inline-80 .math.inline {
     font-size: 80% !important;
 }
+.math-95 .math.display {
+    font-size: 95% !important;
+}
 .math-90 .math.display {
 font-size: 90% !important;
 }
 .math-80 .math.display {
 font-size: 80% !important;
+}
+.math-70 .math.display {
+    font-size: 70% !important;
 }
 
 .footnotes-0 aside {
@@ -434,10 +447,10 @@ background-clip: padding-box;
 }
 
 .table-va td {
-vertical-align: middle !important;
+    vertical-align: middle !important;
 }
 .table-valign td {
-vertical-align: middle !important;
+    vertical-align: middle !important;
 }
 
 /* td centering */
@@ -526,6 +539,10 @@ text-align: center !important;
 
 .title-right h2 {
 text-align: right !important;
+}
+
+.under {
+    text-decoration: underline !important;
 }
 
 /* For lists, shifting the bullet points */
