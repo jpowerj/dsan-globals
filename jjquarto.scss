@@ -42,7 +42,10 @@ border: 1px solid #dee2e6 !important;
 } */
 
 .caption {
-text-align: center;
+    text-align: center;
+}
+.caption-smaller .caption {
+    font-size: 50% !important;
 }
 
 .cb1 {
@@ -53,12 +56,12 @@ color: rgb(230, 159, 0) !important;
     background-color: rgb(230, 159, 0) !important;
 }
 .cb1a-bg {
-background-color: rgba(230, 159, 0, 0.333) !important;
-text-align: center !important;
+    background-color: rgba(230, 159, 0, 0.333) !important;
+    text-align: center !important;
 }
 .cb2 {
-/* #56B4E9 */
-color: rgb(86, 180, 233) !important;
+    /* #56B4E9 */
+    color: rgb(86, 180, 233) !important;
 }
 .cb2-bg {
     background-color: rgb(86, 180, 233) !important;
@@ -68,6 +71,7 @@ color: rgb(86, 180, 233) !important;
     text-align: center !important;
 }
 .cb3 {
+    /* #009E73 */
     color: rgb(0, 158, 115) !important;
 }
 .cb3-bg {
@@ -91,15 +95,26 @@ color: rgb(86, 180, 233) !important;
     text-align: center !important;
 }
 
+/* Neural nets */
+.cb-in {
+    color: #679d67 !important;
+}
+.cb-hidden {
+    color: #666693 !important;
+}
+.cb-out {
+    color: #976464 !important;
+}
+
 .code-90 code {
-font-size: 90% !important;
+    font-size: 90% !important;
 }
 .code-80 code {
-font-size: 80% !important;
+    font-size: 80% !important;
 }
 
 .cols-clip .column {
-overflow-x: clip !important;
+    overflow-x: clip !important;
 }
 
 /* Vertical-align columns */
@@ -124,8 +139,8 @@ overflow-x: clip !important;
 }
 
 .crunch-columns .columns {
-margin-top: 0px !important;
-margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .crunch-figure figure {
@@ -308,6 +323,9 @@ font-size: 90% !important;
 .math-80 .math.display {
 font-size: 80% !important;
 }
+.math-75 .math.display {
+    font-size: 75% !important;
+}
 .math-70 .math.display {
     font-size: 70% !important;
 }
@@ -377,10 +395,13 @@ line-height: 0.7em !important;
 }
 
 .smaller-table td {
-font-size: 80% !important;
+    font-size: 80% !important;
 }
 .smaller-table th {
-font-size: 80% !important;
+    font-size: 80% !important;
+}
+.table-90 th {
+    font-size: 90% !important;
 }
 
 .sticky-head {
@@ -477,8 +498,11 @@ vertical-align: middle !important;
 vertical-align: top !important;
 }
 
+.text-50 p {
+    font-size: 50% !important;
+}
 .text-60 p {
-font-size: 60% !important;
+    font-size: 60% !important;
 }
 .text-65 {
 font-size: 65% !important;
