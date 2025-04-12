@@ -498,14 +498,18 @@ vertical-align: middle !important;
 vertical-align: top !important;
 }
 
+.td-no-bottom td {
+    border-bottom: 0px !important;
+}
+
 .text-50 p {
     font-size: 50% !important;
 }
-.text-60 p {
-    font-size: 60% !important;
+.text-60 {
+        font-size: 60% !important;
 }
 .text-65 {
-font-size: 65% !important;
+    font-size: 65% !important;
 }
 .text-70 {
 font-size: 70% !important;
@@ -514,7 +518,7 @@ font-size: 70% !important;
 font-size: 75% !important;
 }
 .text-80 {
-font-size: 80% !important;
+    font-size: 80% !important;
 }
 .text-85 {
 font-size: 85% !important;
@@ -528,6 +532,9 @@ font-size: 95% !important;
 
 .title-06 h2, .title-06 h1 {
     font-size: calc(0.6 * var(--r-heading2-size)) !important;
+}
+.title-065 h2, .title-065 h1 {
+    font-size: calc(0.65 * var(--r-heading2-size)) !important;
 }
 .title-07 h2, .title-07 h1 {
     font-size: calc(0.7 * var(--r-heading2-size)) !important;
