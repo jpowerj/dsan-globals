@@ -14,14 +14,11 @@ pointer-events: none;
 }
 
 .alg {
-font-variant-caps: small-caps !important;
+    font-variant-caps: small-caps !important;
 }
 
-.aside-05 aside {
-    font-size: 0.5em !important;
-}
 .aside-80 aside {
-    font-size: 1.3rem !important;
+font-size: 1.3rem !important;
 }
 
 .blockquote-90 blockquote {
@@ -33,16 +30,12 @@ border: 1px solid black !important;
 }
 
 .boxed {
-border: 3px solid black !important;
-padding: 2px !important;
+    border: 3px solid black !important;
+    padding: 2px !important;
 }
-
-.callout-fw .callout-body, .callout-fw .callout-content {
-    width: 100% !important;
-}
-
-.callout-valign .callout-content {
-    align-content: center !important;
+.boxed-cb {
+    border: 3px solid #e69f00 !important;
+    padding: 5px !important;
 }
 
 /* div.callout-note > .callout-header {
@@ -55,7 +48,10 @@ border: 1px solid #dee2e6 !important;
 .caption {
     text-align: center;
 }
-.caption-smaller .caption {
+.caption-60 .caption, .caption-60 figcaption {
+    font-size: 60% !important;
+}
+.caption-50 .caption, .caption-50 figcaption {
     font-size: 50% !important;
 }
 
@@ -120,8 +116,14 @@ color: rgb(230, 159, 0) !important;
 .code-90 code {
     font-size: 90% !important;
 }
+.code-85 code {
+    font-size: 85% !important;
+}
 .code-80 code {
     font-size: 80% !important;
+}
+.code-black code {
+    color: black !important;
 }
 
 .cols-clip .column {
@@ -197,6 +199,10 @@ margin-bottom: 0px !important;
     margin-top: 6px !important;
     margin-bottom: 6px !important;
 }
+.crunch-li-7 li {
+    margin-top: 7px !important;
+    margin-bottom: 7px !important;
+}
 .crunch-li-8 li {
     margin-top: 8px !important;
     margin-bottom: 8px !important;
@@ -261,9 +267,6 @@ margin-bottom: 0px !important;
     padding: 3px !important;
 }
 
-.crunch-title h1 {
-    margin-bottom: 0px !important;
-}
 .crunch-title h2 {
     margin-bottom: 0px !important;
 }
@@ -281,28 +284,15 @@ details {
 }
 
 figcaption {
-    text-align: center !important;
-}
-
-.jjbox {
-    border: 3px solid #e69f00;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    margin: 2px;
-}
-/* Use to make lines tall enough to allow jjbox to work */
-.lh-adjust p {
-    line-height: 1.5;
+text-align: center !important;
 }
 
 /* fix mapview... */
 .fix-mapview .leaflet {
-    height: 400px !important;
+height: 400px !important;
 }
 .leaflet {
-    width: 100% !important;
+width: 100% !important;
 }
 .leaflet-350 .leaflet {
 height: 350px !important;
@@ -341,6 +331,9 @@ font-size: 80% !important;
 .inline-80 .math.inline {
     font-size: 80% !important;
 }
+.inline-70 .math.inline {
+    font-size: 70% !important;
+}
 .math-95 .math.display {
     font-size: 95% !important;
 }
@@ -358,8 +351,8 @@ font-size: 80% !important;
 }
 
 .footnotes-0 aside {
-    bottom: 0px !important;
-    margin-top: 0px !important;
+bottom: 0px !important;
+margin-top: 0px !important;
 }
 
 .new-unit {
@@ -372,9 +365,9 @@ top: 0px !important;
 }
 
 .output-center .cell-output pre {
-max-width: fit-content;
-margin-left: auto;
-margin-right: auto;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 .output-nowrap .cell-output pre code {
 word-break: normal !important;
@@ -397,7 +390,7 @@ font-size: 60% !important;
 font-size: 70% !important;
 }
 .p-75 p {
-    font-size: 75% !important;
+font-size: 75% !important;
 }
 .p-80 p {
 font-size: 80% !important;
@@ -406,11 +399,7 @@ font-size: 80% !important;
 font-size: 85% !important;
 }
 .p-90 p {
-    font-size: 90% !important;
-}
-
-.quarto-title-block {
-    font-size: 95% !important;
+font-size: 90% !important;
 }
 
 .sidebar-footer-item {
@@ -431,44 +420,45 @@ line-height: 0.7em !important;
 .smaller-table th {
     font-size: 80% !important;
 }
-.table-75 th {
-    font-size: 75% !important;
-}
-.table-75 td {
-    font-size: 75% !important;
-}
-.table-85 th {
-    font-size: 85% !important;
-}
-.table-85 td {
-    font-size: 85% !important;
-}
-.table-90 th {
+.table-90 td, .table-90 th {
     font-size: 90% !important;
 }
-.table-90 td {
-    font-size: 90% !important;
+.table-85 td, .table-85 th {
+    font-size: 85% !important;
+}
+.table-80 td, .table-80 th {
+    font-size: 80% !important;
+}
+.table-70 td, .table-70 th {
+    font-size: 70% !important;
+}
+.table-nolines td {
+    border: 0px !important;
+}
+.table-crunch-td td {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
 }
 
 .sticky-head {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    /* border-bottom: 2px solid gray !important; */
-    border-top: none !important;
-    border-bottom: none !important;
-    /* box-shadow: inset 0 2px 0 #000000, inset 0 -2px 0 #000000; */
-    box-shadow: inset 0 -2px 0 gray;
-    padding: 2px 0;
+position: sticky;
+top: 0;
+background-color: white;
+/* border-bottom: 2px solid gray !important; */
+border-top: none !important;
+border-bottom: none !important;
+/* box-shadow: inset 0 2px 0 #000000, inset 0 -2px 0 #000000; */
+box-shadow: inset 0 -2px 0 gray;
+padding: 2px 0;
 }
 
 .sticky-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
 .sticky-table tbody:nth-of-type(1) tr:nth-of-type(1) td {
-    border-top: none !important;
+border-top: none !important;
 }
 
 .small-tex-td {
@@ -479,14 +469,14 @@ line-height: 0.7em !important;
 }
 
 .small-title h1 {
-    font-size: var(--r-heading2-size) !important;
+font-size: var(--r-heading2-size) !important;
 }
 .small-title h2 {
     font-size: var(--r-heading3-size) !important;
 }
 
 summary {
-    font-size: 1.2rem !important;
+font-size: 1.2rem !important;
 }
 
 .table-80 td {
@@ -510,7 +500,7 @@ font-size: 90% !important;
 
 /* and one small fix for weird FF behavior, described in https://stackoverflow.com/questions/7517127/ */
 table thead th {
-    background-clip: padding-box;
+background-clip: padding-box;
 }
 
 .table-va td {
@@ -522,18 +512,18 @@ table thead th {
 
 /* td centering */
 .tdc {
-    vertical-align: middle !important;
-    text-align: center !important;
+vertical-align: middle !important;
+text-align: center !important;
 }
 
 /* td vertical centering */
 .tdvc {
-    vertical-align: middle !important;
+vertical-align: middle !important;
 }
 
 /* td vertical top-align */
 .tdvt {
-    vertical-align: top !important;
+vertical-align: top !important;
 }
 
 .tdvc-all td {
@@ -552,37 +542,40 @@ vertical-align: top !important;
     font-size: 50% !important;
 }
 .text-60 {
-    font-size: 60% !important;
+        font-size: 60% !important;
 }
 .text-65 {
     font-size: 65% !important;
 }
 .text-70 {
-    font-size: 70% !important;
+font-size: 70% !important;
 }
 .text-75 {
-    font-size: 75% !important;
+font-size: 75% !important;
 }
 .text-80 {
     font-size: 80% !important;
 }
+.text-82 {
+    font-size: 82% !important;
+}
 .text-85 {
-    font-size: 85% !important;
+font-size: 85% !important;
 }
 .text-90 {
-    font-size: 90% !important;
+font-size: 90% !important;
 }
 .text-95 {
-    font-size: 95% !important;
+font-size: 95% !important;
 }
 
-/* Default title size plus modifiers */
-h1:not(.title) {
-    font-size: calc(1.1 * var(--r-heading1-size)) !important;
+.reveal .title {
+    font-size: 200% !important;
 }
-h2:not(.title)  {
-    font-size: calc(1.1 * var(--r-heading2-size)) !important;
+.reveal .subtitle {
+    font-size: 90% !important;
 }
+
 .title-06 h2, .title-06 h1 {
     font-size: calc(0.6 * var(--r-heading2-size)) !important;
 }
@@ -596,18 +589,19 @@ h2:not(.title)  {
 font-size: calc(0.8 * var(--r-heading2-size)) !important;
 }
 .title-09 h2, .title-09 h1 {
-    font-size: calc(0.9 * var(--r-heading2-size)) !important;
+font-size: calc(0.9 * var(--r-heading2-size)) !important;
 }
 .title-10 h2, .title-10 h1 {
     font-size: calc(1.0 * var(--r-heading2-size)) !important;
 }
-
 .title-11 h2, .title-11 h1 {
-font-size: calc(1.1 * var(--r-heading2-size)) !important;
+    font-size: calc(1.1 * var(--r-heading2-size)) !important;
 }
-
 .title-12 h2, .title-12 h1 {
-font-size: calc(1.2 * var(--r-heading2-size)) !important;
+    font-size: calc(1.2 * var(--r-heading2-size)) !important;
+}
+.title-13 h2, .title-13 h1 {
+    font-size: calc(1.3 * var(--r-heading2-size)) !important;
 }
 
 .title-center h2 {
@@ -624,9 +618,9 @@ text-align: right !important;
 
 /* For lists, shifting the bullet points */
 .unindent-lists ul {
-margin-left: 0px !important;
+    margin-left: 0px !important;
 }
 
 .valign-cols div.column {
-vertical-align: middle !important;
+    vertical-align: middle !important;
 }
