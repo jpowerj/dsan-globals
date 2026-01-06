@@ -414,7 +414,12 @@ font-size: 80% !important;
 font-size: 85% !important;
 }
 .p-90 p {
-font-size: 90% !important;
+  font-size: 90% !important;
+}
+
+.quarto-title-affiliation br {
+  display: block;
+  margin-top: 0px;
 }
 
 .shift-ul ul {
