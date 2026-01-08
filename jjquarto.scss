@@ -330,21 +330,25 @@ height: 350px !important;
 }
 
 .fix-tex-headers th {
-font-size: 1em !important;
+  font-size: 1em !important;
+}
+
+.force-fw {
+  width: 100% !important;
 }
 
 .fn-span {
-font-size: 80% !important;
+  font-size: 80% !important;
 }
 
 .inline-95 .math.inline {
-    font-size: 95% !important;
+  font-size: 95% !important;
 }
 .inline-90 .math.inline {
-    font-size: 90% !important;
+  font-size: 90% !important;
 }
 .inline-80 .math.inline {
-    font-size: 80% !important;
+  font-size: 80% !important;
 }
 .inline-70 .math.inline {
     font-size: 70% !important;
@@ -455,6 +459,9 @@ font-size: 85% !important;
 }
 .table-70 td, .table-70 th {
     font-size: 70% !important;
+}
+.table-60 td, .table-60 th {
+    font-size: 60% !important;
 }
 .table-nolines td {
     border: 0px !important;
