@@ -18,8 +18,24 @@ a.disabled {
     font-variant-caps: small-caps !important;
 }
 
+.aside-65 aside {
+    font-size: 65% !important;
+}
+
+.aside-70 aside {
+    font-size: 70% !important;
+}
+
 .aside-80 aside {
     font-size: 1.3rem !important;
+}
+
+.aside-90 aside {
+    font-size: 90% !important;
+}
+
+.blockquote-80 blockquote {
+    font-size: 80% !important;
 }
 
 .blockquote-90 blockquote {
@@ -32,15 +48,26 @@ a.disabled {
 
 .boxed {
     border: 3px solid black !important;
-    padding-top: 2px !important;
-    padding-bottom: 2px !important;
-    padding-left: 4px !important;
-    padding-right: 4px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
 }
 
-.boxed-cb {
+.boxed-cb1 {
     border: 3px solid #e69f00 !important;
-    padding: 5px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+
+.boxed-cb2 {
+    border: 3px solid #56b4e9 !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
 }
 
 /* div.callout-note > .callout-header {
@@ -49,6 +76,14 @@ background-color: #f8f8f8 !important;
 .callout-grey .callout.callout-style-default {
 border: 1px solid #dee2e6 !important;
 } */
+
+.callout-fix .callout {
+    font-size: 1.0em !important;
+}
+
+.callout-fix .callout-title {
+    font-size: 0.9em !important;
+}
 
 .caption {
     text-align: center;
@@ -175,6 +210,16 @@ border: 1px solid #dee2e6 !important;
 .crunch-callout .callout {
     margin-top: 2px !important;
     margin-bottom: 2px !important;
+}
+
+.crunch-callout-8 .callout {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.crunch-callout-12 .callout {
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
 }
 
 .crunch-code-filename .code-with-filename {
@@ -768,6 +813,37 @@ table thead th {
 
 .under {
     text-decoration: underline !important;
+}
+
+/* for "underbrace" */
+/* https://stackoverflow.com/questions/38163998/how-to-recreate-texs-over-underbracket-using-css */
+[data-bracket] {
+    display: inline-block;
+    /* vertical-align: top; */
+    position: relative;
+}
+
+[data-bracket]:after {
+    content: "";
+    display: block;
+    height: 6px;
+    border: 2px solid black;
+    border-top: none;
+    margin-left: -2px;
+    margin-right: -2px;
+    transform: translateY(-1.05rem);
+}
+
+[data-bracket]:before {
+    content: attr(data-bracket);
+    position: absolute;
+    top: 67%;
+    font-size: 60%;
+    padding: 1px;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
 }
 
 /* For lists, shifting the bullet points */
