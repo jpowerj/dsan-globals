@@ -54,6 +54,16 @@ a.disabled {
     padding-bottom: 1px !important;
 }
 
+.boxed-crunch {
+    border: 3px solid black !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-top: -2px !important;
+    padding-bottom: -2px !important;
+    display: inline-block !important;
+    line-height: 1.0 !important;
+}
+
 .boxed-cb1 {
     border: 3px solid #e69f00 !important;
     padding-left: 5px !important;
@@ -147,6 +157,10 @@ border: 1px solid #dee2e6 !important;
 
 .cbg {
     color: rgb(211, 211, 211) !important;
+}
+
+.cbg-darker {
+    color: rgb(190, 190, 190) !important;
 }
 
 .cbg-bg {
@@ -438,6 +452,51 @@ figcaption {
     font-size: 80% !important;
 }
 
+.img-flip {
+    -moz-transform: scaleX(-1);
+    /* Gecko */
+    -o-transform: scaleX(-1);
+    /* Opera */
+    -webkit-transform: scaleX(-1);
+    /* Webkit */
+    transform: scaleX(-1);
+    /* Standard */
+
+    filter: FlipH;
+    /* IE 6/7/8 */
+}
+
+.upside-down-flip {
+    display: inline-block;
+    transform: scaleY(-1);
+}
+
+.flip-lr {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+.game-cell {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+.game-label-crunch {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    text-align: center !important;
+}
+
+.inline-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
 .inline-95 .math.inline {
     font-size: 95% !important;
 }
@@ -710,6 +769,15 @@ table thead th {
     border-bottom: 0px !important;
 }
 
+.td-nb td {
+    border-bottom: 0px solid grey !important;
+}
+
+.td-nb tr {
+    border-bottom: 0px solid grey !important;
+}
+
+
 .text-50 p {
     font-size: 50% !important;
 }
@@ -718,8 +786,16 @@ table thead th {
     font-size: 60% !important;
 }
 
+.text-62 {
+    font-size: 62% !important;
+}
+
 .text-65 {
     font-size: 65% !important;
+}
+
+.text-68 {
+    font-size: 68% !important;
 }
 
 .text-70 {
