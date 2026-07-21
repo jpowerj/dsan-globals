@@ -1,11 +1,34 @@
 /*-- scss:defaults --*/
-$font-family-sans-serif: "Computer Modern Sans",
-sans-serif !default;
+$font-family-sans-serif:
+  // "Archivo",
+  "Latin Mono Sans",
+  "Computer Modern Sans",
+  sans-serif;
 
 /*-- scss:rules --*/
+// @font-face {
+//   font-family: 'Archivo';
+//   font-weight: 400;
+//   font-style: normal;
+//   src: url("assets/Archivo-Regular.woff2") format('woff2');
+// }
+
 body {
-    font-family: "Computer Modern Sans", sans-serif;
+  font-family:
+    // "Archivo",
+    "Latin Modern Sans",
+    "Computer Modern Sans",
+    sans-serif;
 }
+
+/* 
+// :root {
+//   // --bs-badge-padding-x: 0.65em;
+//   --bs-badge-padding-x: 0.5em;
+//   // --bs-badge-padding-y: 0.35em;
+//   --bs-badge-padding-y: 0.2em;
+// }
+*/
 
 a.disabled {
     /* Make the disabled links grayish */
@@ -18,24 +41,8 @@ a.disabled {
     font-variant-caps: small-caps !important;
 }
 
-.aside-65 aside {
-    font-size: 65% !important;
-}
-
-.aside-70 aside {
-    font-size: 70% !important;
-}
-
 .aside-80 aside {
     font-size: 1.3rem !important;
-}
-
-.aside-90 aside {
-    font-size: 90% !important;
-}
-
-.blockquote-80 blockquote {
-    font-size: 80% !important;
 }
 
 .blockquote-90 blockquote {
@@ -48,36 +55,17 @@ a.disabled {
 
 .boxed {
     border: 3px solid black !important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-    padding-top: 1px !important;
-    padding-bottom: 1px !important;
+    padding: 2px !important;
 }
 
-.boxed-crunch {
-    border: 3px solid black !important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-    padding-top: -2px !important;
-    padding-bottom: -2px !important;
-    display: inline-block !important;
-    line-height: 1.0 !important;
-}
-
-.boxed-cb1 {
+.boxed-cb {
     border: 3px solid #e69f00 !important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-    padding-top: 1px !important;
-    padding-bottom: 1px !important;
+    padding: 5px !important;
 }
-
-.boxed-cb2 {
-    border: 3px solid #56b4e9 !important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-    padding-top: 1px !important;
-    padding-bottom: 1px !important;
+.boxed-cb-bg {
+    border: 3px solid #e69f00 !important;
+    background-color: #e69f0030;
+    padding: 5px !important;
 }
 
 /* div.callout-note > .callout-header {
@@ -86,14 +74,6 @@ background-color: #f8f8f8 !important;
 .callout-grey .callout.callout-style-default {
 border: 1px solid #dee2e6 !important;
 } */
-
-.callout-fix .callout {
-    font-size: 1.0em !important;
-}
-
-.callout-fix .callout-title {
-    font-size: 0.9em !important;
-}
 
 .caption {
     text-align: center;
@@ -159,10 +139,6 @@ border: 1px solid #dee2e6 !important;
     color: rgb(211, 211, 211) !important;
 }
 
-.cbg-darker {
-    color: rgb(190, 190, 190) !important;
-}
-
 .cbg-bg {
     background-color: rgb(211, 211, 211) !important;
 }
@@ -185,10 +161,6 @@ border: 1px solid #dee2e6 !important;
     color: #976464 !important;
 }
 
-.center-output pre {
-    text-align: center !important;
-}
-
 .code-90 code {
     font-size: 90% !important;
 }
@@ -203,6 +175,9 @@ border: 1px solid #dee2e6 !important;
 
 .code-black code {
     color: black !important;
+}
+.code-white code {
+  color: white !important;
 }
 
 .cols-clip .column {
@@ -224,16 +199,6 @@ border: 1px solid #dee2e6 !important;
 .crunch-callout .callout {
     margin-top: 2px !important;
     margin-bottom: 2px !important;
-}
-
-.crunch-callout-8 .callout {
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
-}
-
-.crunch-callout-12 .callout {
-    margin-top: 12px !important;
-    margin-bottom: 12px !important;
 }
 
 .crunch-code-filename .code-with-filename {
@@ -313,9 +278,11 @@ border: 1px solid #dee2e6 !important;
     margin-top: 2px !important;
 }
 
-.crunch-math mjx-container {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+.crunch-math mjx-container,
+.crunch-math .MathJax_Display,
+.crunch-math .math.display {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
 }
 
 .crunch-math-15 mjx-container {
@@ -326,6 +293,16 @@ border: 1px solid #dee2e6 !important;
 .crunch-p p {
     margin-top: 2px !important;
     margin-bottom: 2px !important;
+}
+
+.crunch-p-3 p {
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+}
+
+.crunch-p-4 p {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
 }
 
 .crunch-p-5 p {
@@ -387,20 +364,32 @@ details {
     margin-bottom: 0px !important;
 }
 
-.exercise-editor-header>* {
-    font-size: 0.9rem !important;
+.check-gold {
+    color: #fed42d;
+    filter: sepia(1) hue-rotate(13.5deg) drop-shadow(0 0 0.01ex #fed42d) saturate(5);
 }
 
-.exercise-editor-body>* {
-    font-size: 0.825rem !important;
+.box-gold {
+    color: #fed42d;
+    filter: sepia(1) hue-rotate(12.5deg) drop-shadow(0 0 0.01ex #fed42d) saturate(2.5);
 }
 
-.btn-label-exercise-editor {
-    font-size: 0.8rem !important;
+.box-left-half {
+    clip-path: inset(0 50% 0 0) !important;
+}
+
+.box-right-half {
+    clip-path: inset(0 0 0 50%) !important;
 }
 
 figcaption {
     text-align: center !important;
+    font-style: italic !important;
+}
+
+.flip-emoji {
+    display: inline-block !important;
+    transform: scaleX(-1) !important;
 }
 
 /* fix mapview... */
@@ -410,10 +399,6 @@ figcaption {
 
 .leaflet {
     width: 100% !important;
-}
-
-.leaflet-300 .leaflet {
-    height: 300px !important;
 }
 
 .leaflet-350 .leaflet {
@@ -444,57 +429,8 @@ figcaption {
     font-size: 1em !important;
 }
 
-.force-fw {
-    width: 100% !important;
-}
-
 .fn-span {
     font-size: 80% !important;
-}
-
-.img-flip {
-    -moz-transform: scaleX(-1);
-    /* Gecko */
-    -o-transform: scaleX(-1);
-    /* Opera */
-    -webkit-transform: scaleX(-1);
-    /* Webkit */
-    transform: scaleX(-1);
-    /* Standard */
-
-    filter: FlipH;
-    /* IE 6/7/8 */
-}
-
-.upside-down-flip {
-    display: inline-block;
-    transform: scaleY(-1);
-}
-
-.flip-lr {
-    display: inline-block;
-    transform: scaleX(-1);
-}
-
-.game-cell {
-    padding-left: 1px !important;
-    padding-right: 1px !important;
-    padding-top: 3px !important;
-    padding-bottom: 3px !important;
-}
-
-.game-label-crunch {
-    padding-left: 1px !important;
-    padding-right: 1px !important;
-    padding-top: 3px !important;
-    padding-bottom: 3px !important;
-    text-align: center !important;
-}
-
-.inline-icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.125em;
 }
 
 .inline-95 .math.inline {
@@ -503,6 +439,10 @@ figcaption {
 
 .inline-90 .math.inline {
     font-size: 90% !important;
+}
+
+.inline-85 .math.inline {
+    font-size: 85% !important;
 }
 
 .inline-80 .math.inline {
@@ -531,6 +471,25 @@ figcaption {
 
 .math-70 .math.display {
     font-size: 70% !important;
+}
+
+.material-symbols-outlined {
+  margin-top: 5px;
+  margin-right: -6px;
+  vertical-align: -5px;
+  font-size: 2rem;
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+  border-radius: 8px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 60
+}
+
+.crunch-footnotes aside {
+    margin-top: 0px !important;
 }
 
 .footnotes-0 aside {
@@ -594,15 +553,6 @@ figcaption {
     font-size: 90% !important;
 }
 
-.quarto-title-affiliation br {
-    display: block;
-    margin-top: 0px;
-}
-
-.shift-ul ul {
-    padding-inline-start: 0 !important;
-}
-
 .sidebar-footer-item {
     font-size: 80% !important;
 }
@@ -622,6 +572,13 @@ figcaption {
 
 .smaller-table th {
     font-size: 80% !important;
+}
+
+.table-no-borders tr,
+.table-no-borders th,
+.table-no-borders td {
+    border: 0px solid lightgray !important;
+    padding: 0px !important;
 }
 
 .table-90 td,
@@ -649,6 +606,11 @@ figcaption {
     font-size: 70% !important;
 }
 
+.table-65 td,
+.table-65 th {
+    font-size: 65% !important;
+}
+
 .table-60 td,
 .table-60 th {
     font-size: 60% !important;
@@ -666,7 +628,7 @@ figcaption {
 .sticky-head {
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: $body-bg;
     /* border-bottom: 2px solid gray !important; */
     border-top: none !important;
     border-bottom: none !important;
@@ -747,6 +709,11 @@ table thead th {
     text-align: center !important;
 }
 
+.tdr {
+    vertical-align: middle !important;
+    text-align: right !important;
+}
+
 /* td vertical centering */
 .tdvc {
     vertical-align: middle !important;
@@ -769,14 +736,10 @@ table thead th {
     border-bottom: 0px !important;
 }
 
-.td-nb td {
-    border-bottom: 0px solid grey !important;
-}
-
+.td-nb td,
 .td-nb tr {
     border-bottom: 0px solid grey !important;
 }
-
 
 .text-50 p {
     font-size: 50% !important;
@@ -786,16 +749,8 @@ table thead th {
     font-size: 60% !important;
 }
 
-.text-62 {
-    font-size: 62% !important;
-}
-
 .text-65 {
     font-size: 65% !important;
-}
-
-.text-68 {
-    font-size: 68% !important;
 }
 
 .text-70 {
@@ -887,39 +842,12 @@ table thead th {
     text-align: right !important;
 }
 
+.ul-block ul {
+    display: block !important;
+}
+
 .under {
     text-decoration: underline !important;
-}
-
-/* for "underbrace" */
-/* https://stackoverflow.com/questions/38163998/how-to-recreate-texs-over-underbracket-using-css */
-[data-bracket] {
-    display: inline-block;
-    /* vertical-align: top; */
-    position: relative;
-}
-
-[data-bracket]:after {
-    content: "";
-    display: block;
-    height: 6px;
-    border: 2px solid black;
-    border-top: none;
-    margin-left: -2px;
-    margin-right: -2px;
-    transform: translateY(-1.05rem);
-}
-
-[data-bracket]:before {
-    content: attr(data-bracket);
-    position: absolute;
-    top: 67%;
-    font-size: 60%;
-    padding: 1px;
-    white-space: nowrap;
-    left: 50%;
-    transform: translateX(-50%);
-    font-style: italic;
 }
 
 /* For lists, shifting the bullet points */
