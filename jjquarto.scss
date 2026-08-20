@@ -400,7 +400,9 @@ figcaption {
 .leaflet {
     width: 100% !important;
 }
-
+.leaflet-300 .leaflet {
+    height: 300px !important;
+}
 .leaflet-350 .leaflet {
     height: 350px !important;
 }
