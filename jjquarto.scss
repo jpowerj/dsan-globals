@@ -58,6 +58,12 @@ a.disabled {
     padding: 2px !important;
 }
 
+.boxed-g {
+    border: 2px solid gray !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}
+
 .boxed-cb {
     border: 3px solid #e69f00 !important;
     padding: 5px !important;
@@ -553,6 +559,10 @@ figcaption {
 
 .p-90 p {
     font-size: 90% !important;
+}
+
+.pagedtable-footer {
+  font-size: 75% !important;
 }
 
 .sidebar-footer-item {
