@@ -303,7 +303,10 @@ border: 1px solid #dee2e6 !important;
     margin-top: 2px !important;
     margin-bottom: 2px !important;
 }
-
+.crunch-p-top p {
+  margin-top: 0px !important;
+  margin-bottom: 2px !important;
+}
 .crunch-p-3 p {
     margin-top: 3px !important;
     margin-bottom: 3px !important;
@@ -798,6 +801,12 @@ table thead th {
 
 .text-95 {
     font-size: 95% !important;
+}
+.text-150 {
+  font-size: 150% !important;
+}
+.text-200 {
+  font-size: 200% !important;
 }
 
 .reveal .title {
