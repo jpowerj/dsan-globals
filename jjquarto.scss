@@ -81,6 +81,20 @@ background-color: #f8f8f8 !important;
 border: 1px solid #dee2e6 !important;
 } */
 
+.callout-icon {
+  margin-right: 5px !important;
+}
+.info-badge {
+  border-left: .3rem solid #198754;
+  border-right: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-radius: 4px;
+  background-color: rgb(232,243,237.9);
+  padding-left: .2em;
+  padding-right: .2em;
+}
+
 .caption {
     text-align: center;
 }
@@ -205,6 +219,10 @@ border: 1px solid #dee2e6 !important;
 .crunch-callout .callout {
     margin-top: 2px !important;
     margin-bottom: 2px !important;
+}
+.crunch-callout-half .callout {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .crunch-code-filename .code-with-filename {
@@ -409,6 +427,11 @@ figcaption {
     height: 400px !important;
 }
 
+.fix-video video {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
 .leaflet {
     width: 100% !important;
 }
@@ -513,6 +536,10 @@ figcaption {
 
 .new-unit {
     border-top: 2px solid gray !important;
+}
+
+.noicon:after{
+  display: none;
 }
 
 .not-title-slide {
@@ -831,7 +858,10 @@ table thead th {
 .title-07 h1 {
     font-size: calc(0.7 * var(--r-heading2-size)) !important;
 }
-
+.title-075 h2,
+.title-075 h1 {
+    font-size: calc(0.75 * var(--r-heading2-size)) !important;
+}
 .title-08 h2,
 .title-08 h1 {
     font-size: calc(0.8 * var(--r-heading2-size)) !important;
@@ -877,6 +907,9 @@ table thead th {
 .ul-block ul {
     display: block !important;
 }
+.fix-ol ol {
+  padding-left: 10px !important;
+}
 
 .under {
     text-decoration: underline !important;
@@ -889,4 +922,28 @@ table thead th {
 
 .valign-cols div.column {
     vertical-align: middle !important;
+}
+
+.fix-wrap pre.code-overflow-wrap,
+.fix-wrap pre.code-overflow-wrap code {
+  overflow-wrap: break-word !important;
+  word-break: break-all !important;
+  white-space: pre-wrap !important;
+}
+
+.code-overflow-wrap.numberSource code > span {
+  position: static !important;
+  left: 0 !important;
+  display: inline-block;
+  width: 100%;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.code-overflow-wrap.numberSource code > span > a:first-child::before {
+  position: static;
+  left: 0;
+  display: inline-block;
+  width: 1.5em;
+  text-indent: 0;
 }
