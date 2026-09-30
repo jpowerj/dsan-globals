@@ -751,7 +751,9 @@ table thead th {
 .tdc {
     text-align: center !important;
 }
-
+.tdl {
+    text-align: left !important;
+}
 .tdr {
     vertical-align: middle !important;
     text-align: right !important;
@@ -779,9 +781,15 @@ table thead th {
     border-bottom: 0px !important;
 }
 
-.td-nb td,
-.td-nb tr {
-    border-bottom: 0px solid grey !important;
+tr.tdnb {
+  border-bottom: none !important;
+}
+
+td.tdnb {
+  border-bottom: none !important;
+}
+td.tdyb {
+  border-bottom: 1px solid !important;
 }
 
 .text-50 p {
@@ -803,7 +811,9 @@ table thead th {
 .text-75 {
     font-size: 75% !important;
 }
-
+.text-775 {
+    font-size: 77.5% !important;
+}
 .text-80 {
     font-size: 80% !important;
 }
@@ -904,6 +914,9 @@ table thead th {
   font-family: "SFMono-Regular", monospace;
 }
 
+.crunch-ul-left ul {
+  margin-left: 10px !important;
+}
 .ul-block ul {
     display: block !important;
 }
