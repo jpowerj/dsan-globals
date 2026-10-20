@@ -1,0 +1,36 @@
+/*-- scss:defaults --*/
+$body-bg: #fbfbf9 !default;
+
+/*-- scss:rules --*/
+body {
+  font-family:
+    "Atkinson Hyperlegible Next",
+    "Latin Modern Sans",
+    "Computer Modern Sans",
+    sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Code editor text in WebR cells */
+.cm-editor {
+  font-size: 15px;
+}
+
+/* Line numbers and gutter should match */
+.cm-gutters {
+  font-size: 15px;
+}
+
+.sidebar-subtitle {
+  font-size: 12pt !important;
+  line-height: 1.0 !important;
+  margin-top: 8px !important;
+}
+.sidebar-subsubtitle {
+  font-size: 11pt !important;
+  line-height: 1.0 !important;
+  margin-top: 5px !important;
+}
+.sidebar.sidebar-navigation > * {
+  padding-top: 0.4em !important;
+}
