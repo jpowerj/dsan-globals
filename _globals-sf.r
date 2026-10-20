@@ -1,8 +1,8 @@
-library(mapview)
+library(mapview) |> suppressPackageStartupMessages()
 mapviewOptions(basemaps = c("Esri.WorldGrayCanvas","Stadia.AlidadeSmoothDark","OpenStreetMap", "Esri.WorldImagery", "OpenTopoMap"))
 
-library(tidyverse)
-library(sf)
+library(tidyverse) |> suppressPackageStartupMessages()
+library(sf) |> suppressPackageStartupMessages()
 
 # https://en.wikipedia.org/wiki/ISO_3166-2:US
 admin_to_iso = c(
