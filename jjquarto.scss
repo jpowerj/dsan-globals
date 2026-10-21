@@ -1,10 +1,5 @@
 /*-- scss:defaults --*/
 // See: https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
-$font-family-sans-serif:
-  // "Archivo",
-  "Latin Mono Sans",
-  "Computer Modern Sans",
-  sans-serif;
 
 /*-- scss:rules --*/
 // @font-face {
@@ -15,11 +10,11 @@ $font-family-sans-serif:
 // }
 
 body {
-  font-family:
-    // "Archivo",
-    "Latin Modern Sans",
-    "Computer Modern Sans",
-    sans-serif;
+  font-family: "Atkinson Hyperlegible Next", "Latin Modern Sans", "Computer Modern Sans", sans-serif;
+}
+
+.reveal {
+  font-family: "Atkinson Hyperlegible Next", "Latin Modern Sans", "Computer Modern Sans", sans-serif;
 }
 
 :root {
@@ -262,6 +257,11 @@ border: 1px solid #dee2e6 !important;
     margin-bottom: 0px !important;
 }
 
+.crunch-img-1 img {
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+}
+
 .crunch-li li {
     margin-top: 2px !important;
     margin-bottom: 2px !important;
@@ -376,6 +376,9 @@ border: 1px solid #dee2e6 !important;
 
 .crunch-title h2 {
     margin-bottom: 0px !important;
+}
+.crunch-title-top h2 {
+  margin-top: 0px !important;
 }
 
 .crunch-ul ul {
@@ -740,6 +743,10 @@ summary {
     font-size: 1.2rem !important;
 }
 
+.summary-mb summary {
+  margin-bottom: 12px !important;
+}
+
 .table-80 td {
     font-size: 80% !important;
 }
@@ -795,7 +802,7 @@ table thead th {
 }
 
 /* td vertical top-align */
-.tdvt {
+td.tdvt {
     vertical-align: top !important;
 }
 
@@ -916,8 +923,6 @@ td.tdnp {
 .title-10 h2,
 .title-10 h1 {
   font-size: calc(1.0 * var(--r-heading2-size)) !important;
-  /* Default is 12px */
-  margin-top: 15px !important;
 }
 
 .title-11 h2,
