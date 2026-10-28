@@ -44,3 +44,15 @@ add_colonies <- function(states_sf) {
     )
   return(bind_rows(states_sf, col_sf))
 }
+
+window_to_sf <- function(ppp_obj) {
+  window_sf <- sf::st_as_sf(ppp_obj) |>
+    filter(label == "window")
+  return(window_sf)
+}
+
+points_to_sf <- function(ppp_obj) {
+  points_sf <- sf::st_as_sf(ppp_obj) |>
+    filter(label == "point")
+  return(points_sf)
+}

@@ -821,6 +821,9 @@ td.tdvt {
 tr.trnb td {
   border-bottom: none !important;
 }
+tr.trnb th {
+  border-bottom: none !important;
+}
 
 td.tdnb {
   border-bottom: none !important;
@@ -848,7 +851,9 @@ td.tdnp {
 .text-70 {
     font-size: 70% !important;
 }
-
+.text-725 {
+    font-size: 72.5% !important;
+}
 .text-75 {
     font-size: 75% !important;
 }
